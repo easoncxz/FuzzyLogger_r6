@@ -1,0 +1,31 @@
+<resources>
+
+    <string name="app_name">FuzzyLogger 6</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_home">FuzzyLogger 6</string>
+    <string name="title_activity_record">Record</string>
+    
+    <string name="home_btnRecord">Record</string>
+    <string name="home_btnView">View</string>
+    <string name="home_tvEmpty">No Recent Items to show</string>
+    
+    <string name="record_tvChooseRow">Choose a Row</string>
+    <string name="record_tvChooseCol">Choose a Column</string>
+    <string name="record_btnEditX">Edit</string>
+    <string name="record_tvEnterData">Input your Data</string>
+    <string name="record_etHint">Type Here...</string>
+    <string name="record_btnCommit">Commit</string>
+    <string name="record_btnCancel">Cancel</string>
+    
+    <string name="view_tvFilter">Choose a Keyword</string>
+    <string name="view_btnFilter">Filter</string>
+    <string name="view_btnReset">Reset</string>
+    <string name="view_tvEmpty">No entries meeting keyword.</string>
+    
+    <string name="list_btnAdd">Add</string>
+    <string name="list_defaultText">(default text)</string>
+    
+    <string name="list_menu_Edit">Edit</string>
+    <string name="list_menu_Delete">Delete</string>
+
+</resources>
