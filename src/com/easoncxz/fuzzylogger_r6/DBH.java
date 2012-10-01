@@ -13,6 +13,7 @@ public class DBH extends SQLiteOpenHelper {
 	public static final String KEY_ROW="myRowKey";
 	public static final String KEY_COL="myColKey";
 	public static final String KEY_ENTRY="myEntryKey";
+	public static final String KEY_GEN_GROUP="rowOrCol";
 
 	public DBH(Context context) {
 		super(context, DATABASE_NAME, null, DATABASE_VERSION);

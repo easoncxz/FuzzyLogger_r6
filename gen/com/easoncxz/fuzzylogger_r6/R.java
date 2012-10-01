@@ -20,54 +20,80 @@ public final class R {
         public static final int home_btnView=0x7f070001;
         public static final int list_btnAdd=0x7f070004;
         public static final int list_et=0x7f070003;
+        public static final int list_menuItem_Delete=0x7f070014;
+        public static final int list_menuItem_Rename=0x7f070015;
         public static final int list_tvPrompt=0x7f070002;
-        public static final int menu_settings=0x7f07000f;
-        public static final int record_btnCancel=0x7f07000b;
-        public static final int record_btnCommit=0x7f07000a;
-        public static final int record_btnEditCols=0x7f070008;
-        public static final int record_btnEditRows=0x7f070006;
-        public static final int record_etEntry=0x7f070009;
-        public static final int record_spCols=0x7f070007;
-        public static final int record_spRows=0x7f070005;
-        public static final int view_btnFilter=0x7f07000d;
-        public static final int view_btnReset=0x7f07000e;
-        public static final int view_sp=0x7f07000c;
+        public static final int menu_settings=0x7f070013;
+        public static final int one_btn=0x7f070008;
+        public static final int one_et=0x7f070007;
+        public static final int one_tvOldName=0x7f070006;
+        public static final int one_tvPrompt=0x7f070005;
+        public static final int record_btnCancel=0x7f07000f;
+        public static final int record_btnCommit=0x7f07000e;
+        public static final int record_btnEditCols=0x7f07000c;
+        public static final int record_btnEditRows=0x7f07000a;
+        public static final int record_etEntry=0x7f07000d;
+        public static final int record_spCols=0x7f07000b;
+        public static final int record_spRows=0x7f070009;
+        public static final int view_btnFilter=0x7f070011;
+        public static final int view_btnReset=0x7f070012;
+        public static final int view_sp=0x7f070010;
     }
     public static final class layout {
         public static final int home=0x7f030000;
         public static final int list=0x7f030001;
         public static final int one=0x7f030002;
         public static final int record=0x7f030003;
-        public static final int viewy=0x7f030004;
+        public static final int simple_list_item_1=0x7f030004;
+        public static final int simple_list_item_2=0x7f030005;
+        public static final int simple_spinner_dropdown_item=0x7f030006;
+        public static final int simple_spinner_item=0x7f030007;
+        public static final int viewy=0x7f030008;
     }
     public static final class menu {
         public static final int home=0x7f060000;
+        public static final int list=0x7f060001;
     }
     public static final class string {
         public static final int app_name=0x7f040000;
         public static final int home_btnRecord=0x7f040004;
         public static final int home_btnView=0x7f040005;
-        public static final int home_tvEmpty=0x7f040006;
-        public static final int list_btnAdd=0x7f040012;
-        public static final int list_defaultText=0x7f040013;
-        public static final int list_menu_Delete=0x7f040015;
-        public static final int list_menu_Edit=0x7f040014;
+        public static final int home_tvClue=0x7f040006;
+        public static final int home_tvEmpty=0x7f040007;
+        public static final int list_btnAdd=0x7f040013;
+        public static final int list_defaultText=0x7f040014;
+        public static final int list_etHint_col=0x7f040018;
+        public static final int list_etHint_row=0x7f040017;
+        public static final int list_menu_Delete=0x7f04001d;
+        public static final int list_menu_Rename=0x7f04001e;
+        public static final int list_strAppTitle_col=0x7f04001c;
+        public static final int list_strAppTitle_row=0x7f04001b;
+        public static final int list_tvEmpty_col=0x7f04001a;
+        public static final int list_tvEmpty_row=0x7f040019;
+        public static final int list_tvPrompt_col=0x7f040016;
+        public static final int list_tvPrompt_row=0x7f040015;
         public static final int menu_settings=0x7f040001;
-        public static final int record_btnCancel=0x7f04000d;
-        public static final int record_btnCommit=0x7f04000c;
-        public static final int record_btnEditX=0x7f040009;
-        public static final int record_etHint=0x7f04000b;
-        public static final int record_tvChooseCol=0x7f040008;
-        public static final int record_tvChooseRow=0x7f040007;
-        public static final int record_tvEnterData=0x7f04000a;
+        public static final int one_defaultText=0x7f04001f;
+        public static final int one_etHint_col=0x7f040023;
+        public static final int one_etHint_row=0x7f040022;
+        public static final int one_tvPrompt_col=0x7f040021;
+        public static final int one_tvPrompt_row=0x7f040020;
+        public static final int record_btnCancel=0x7f04000e;
+        public static final int record_btnCommit=0x7f04000d;
+        public static final int record_btnEditX=0x7f04000a;
+        public static final int record_etHint=0x7f04000c;
+        public static final int record_tvChooseCol=0x7f040009;
+        public static final int record_tvChooseRow=0x7f040008;
+        public static final int record_tvEnterData=0x7f04000b;
         public static final int title_activity_home=0x7f040002;
         public static final int title_activity_record=0x7f040003;
-        public static final int view_btnFilter=0x7f04000f;
-        public static final int view_btnReset=0x7f040010;
-        public static final int view_tvEmpty=0x7f040011;
-        public static final int view_tvFilter=0x7f04000e;
+        public static final int view_btnFilter=0x7f040010;
+        public static final int view_btnReset=0x7f040011;
+        public static final int view_tvEmpty=0x7f040012;
+        public static final int view_tvFilter=0x7f04000f;
     }
     public static final class style {
         public static final int AppTheme=0x7f050000;
+        public static final int TextAppearance=0x7f050001;
     }
 }

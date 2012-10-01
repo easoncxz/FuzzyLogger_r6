@@ -7,6 +7,7 @@
     
     <string name="home_btnRecord">Record</string>
     <string name="home_btnView">View</string>
+    <string name="home_tvClue">Recent Entries in reverse chronological order:</string>
     <string name="home_tvEmpty">No Recent Items to show</string>
     
     <string name="record_tvChooseRow">Choose a Row</string>
@@ -24,8 +25,32 @@
     
     <string name="list_btnAdd">Add</string>
     <string name="list_defaultText">(default text)</string>
-    
-    <string name="list_menu_Edit">Edit</string>
+    <string name="list_tvPrompt_row">Existing Rows</string>
+    <string name="list_tvPrompt_col">Existing Columns</string>
+    <string name="list_etHint_row">Name a new Row here...</string>
+    <string name="list_etHint_col">Name a new Column here...</string>
+    <string name="list_tvEmpty_row">No Rows to display</string>
+    <string name="list_tvEmpty_col">No Columns to display</string>
+    <string name="list_strAppTitle_row">Rows List</string>
+    <string name="list_strAppTitle_col">Columns List</string>
     <string name="list_menu_Delete">Delete</string>
+    <string name="list_menu_Rename">Rename</string>
+    
+    <string name="one_defaultText">(default text)</string>
+    <string name="one_tvPrompt_row">Renaming the Row:</string>
+    <string name="one_tvPrompt_col">Renaming the Column:</string>
+    <string name="one_etHint_row">Give a new name here...</string>
+    <string name="one_etHint_col">Give a new name here...</string>
+    
+    <!--
+    private static final String tvPrompt_row = "Existing Rows";
+	private static final String tvPrompt_col = "Existing Columns";
+	private static final String etHint_row = "Name a new Row here...";
+	private static final String etHint_col = "Name a new Column here...";
+	private static final String tvEmpty_row = "No Rows to display";
+	private static final String tvEmpty_col = "No Columns to display";
+	private static final String strAppTitle_row = "Rows List";
+	private static final String strAppTitle_col = "Columns List";
+    -->
 
 </resources>

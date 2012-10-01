@@ -3,6 +3,41 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
-    
+
+    <TextView
+        android:id="@+id/one_tvPrompt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/one_defaultText"/>
+
+    <TextView
+        android:id="@+id/one_tvOldName"
+        style="@style/TextAppearance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/one_defaultText"
+        android:typeface="monospace" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/one_et"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/one_defaultText" >
+        </EditText>
+
+        <Button
+            android:id="@+id/one_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@android:string/ok" 
+            android:onClick="one_btn_onClick"/>
+    </LinearLayout>
 
 </LinearLayout>

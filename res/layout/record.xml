@@ -34,7 +34,8 @@
                     android:id="@+id/record_btnEditRows"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/record_btnEditX" />
+                    android:text="@string/record_btnEditX" 
+                    android:onClick="record_btnEditRows_onClick"/>
             </LinearLayout>
 
             <TextView
@@ -57,7 +58,8 @@
                     android:id="@+id/record_btnEditCols"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/record_btnEditX" />
+                    android:text="@string/record_btnEditX" 
+                    android:onClick="record_btnEditCols_onClick"/>
             </LinearLayout>
 
             <TextView
@@ -86,7 +88,8 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/record_btnCommit"/>
+            android:text="@string/record_btnCommit"
+            android:onClick="record_btnCommit_onClick"/>
 
         <Button 
             android:id="@+id/record_btnCancel"
@@ -94,6 +97,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/record_btnCancel"
+            android:onClick="record_btnCancel_onClick"
             />
     </LinearLayout>
 
