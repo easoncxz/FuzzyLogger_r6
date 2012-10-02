@@ -2,7 +2,7 @@
 
     <string name="app_name">FuzzyLogger 6</string>
     <string name="menu_settings">Settings</string>
-    <string name="title_activity_home">FuzzyLogger 6</string>
+    <string name="title_activity_home">FuzzyLogger</string>
     <string name="title_activity_record">Record</string>
     
     <string name="home_btnRecord">Record</string>
