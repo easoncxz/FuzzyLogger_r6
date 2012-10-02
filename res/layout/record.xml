@@ -28,12 +28,13 @@
                     android:id="@+id/record_spRows"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1" />
+                    android:layout_weight="8" />
 
                 <Button
                     android:id="@+id/record_btnEditRows"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_weight="2"
                     android:text="@string/record_btnEditX" 
                     android:onClick="record_btnEditRows_onClick"/>
             </LinearLayout>
@@ -52,12 +53,13 @@
                     android:id="@+id/record_spCols"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1" />
+                    android:layout_weight="8" />
 
                 <Button
                     android:id="@+id/record_btnEditCols"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_weight="2"
                     android:text="@string/record_btnEditX" 
                     android:onClick="record_btnEditCols_onClick"/>
             </LinearLayout>

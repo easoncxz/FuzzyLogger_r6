@@ -18,13 +18,13 @@
             android:id="@+id/view_sp"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1" />
+            android:layout_weight="8" />
 
         <Button
             android:id="@+id/view_btnFilter"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="0"
+            android:layout_weight="1"
             android:text="@string/view_btnFilter" 
             android:onClick="view_btnFilter_onClick"/>
         
@@ -32,7 +32,7 @@
             android:id="@+id/view_btnReset"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="0"
+            android:layout_weight="1"
             android:text="@string/view_btnReset"
             android:onClick="view_btnReset_onClick"
             />

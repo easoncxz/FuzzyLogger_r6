@@ -13,7 +13,6 @@ public class Viewy extends ListActivity {
 	private Spinner sp;
 	private ListView lv;
 
-	// TODO whole thing tested by rows only now
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.viewy);

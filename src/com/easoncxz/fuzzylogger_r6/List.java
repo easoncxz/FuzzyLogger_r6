@@ -1,6 +1,9 @@
 package com.easoncxz.fuzzylogger_r6;
 
+import android.app.AlertDialog;
+import android.app.Dialog;
 import android.app.ListActivity;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
@@ -24,11 +27,14 @@ public class List extends ListActivity {
 	public static final int MENU_GROUP_ONLY_ONE = 100;
 	public static final String EXTRA_KEY_MODE = "rowORcol";
 	public static final String EXTRA_KEY_OLD_NAME = "oldNameKey";
-	private int mode;
+	private static final int DIALOG_ID_DELETE = 1;
 	private Bundle extras;
 	private ListView lv;
 	private TextView tvPrompt, tvEmpty;
 	private EditText et;
+	private int mode;
+	private AdapterView.AdapterContextMenuInfo info;
+	private String caption;
 
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -51,8 +57,8 @@ public class List extends ListActivity {
 	public void onCreateContextMenu(ContextMenu menu, View v,
 			ContextMenu.ContextMenuInfo menuInfo) {
 		super.onCreateContextMenu(menu, v, menuInfo);
-		AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo) menuInfo;
-		String caption = ((TextView) info.targetView).getText().toString();
+		info = (AdapterView.AdapterContextMenuInfo) menuInfo;
+		caption = ((TextView) info.targetView).getText().toString();
 		menu.setHeaderTitle(caption);
 		menu.add(MENU_GROUP_ONLY_ONE, MENU_ITEM_ID_DELETE,
 				MENU_ITEM_ORDER_DELETE, R.string.list_menu_Delete);
@@ -61,26 +67,75 @@ public class List extends ListActivity {
 	}
 
 	public boolean onContextItemSelected(MenuItem item) {
-		AdapterView.AdapterContextMenuInfo info;
-		String str;
 		switch (item.getItemId()) {
 		case MENU_ITEM_ID_DELETE:
-			info = (AdapterContextMenuInfo) item.getMenuInfo();
-			str = ((TextView) info.targetView).getText().toString();
-			// TODO warn user
-			Home.deleteWhereGroup(str);
-			fillListApprop(mode);
-			toaster("delete successful");
+			showDialog(DIALOG_ID_DELETE);
 			break;
 		case MENU_ITEM_ID_RENAME:
-			info = (AdapterContextMenuInfo) item.getMenuInfo();
-			str = ((TextView) info.targetView).getText().toString();
 			Intent intent = new Intent(getApplicationContext(), One.class);
 			intent.putExtra(EXTRA_KEY_MODE, mode);
-			intent.putExtra(EXTRA_KEY_OLD_NAME, str);
+			intent.putExtra(EXTRA_KEY_OLD_NAME, caption);
 			startActivity(intent);
 		}
 		return super.onContextItemSelected(item);
+	}
+
+	@Override
+	protected Dialog onCreateDialog(int id) {
+		switch (id) {
+		case DIALOG_ID_DELETE:
+			AlertDialog.Builder builder = new AlertDialog.Builder(List.this);
+			switch (mode) {
+			case Record.MODE_ROWS:
+				builder.setTitle(caption);
+				builder.setMessage(R.string.list_alert_Delete_message_row);
+				builder.setIcon(android.R.drawable.ic_dialog_alert);
+				builder.setPositiveButton(android.R.string.yes,
+						new DialogInterface.OnClickListener() {
+							@Override
+							public void onClick(DialogInterface dialog, int which) {
+								Home.deleteWhereGroup(caption);
+								toaster("delete successful");
+								fillListApprop(mode);
+							}
+						});
+				builder.setNegativeButton(android.R.string.no,
+						new DialogInterface.OnClickListener() {
+							@Override
+							public void onClick(DialogInterface dialog, int which) {
+								dialog.dismiss();
+							}
+						});
+				return builder.create();
+			case Record.MODE_COLS:
+				builder.setTitle(caption);
+				builder.setMessage(R.string.list_alert_Delete_message_col);
+				builder.setIcon(android.R.drawable.ic_dialog_alert);
+				builder.setPositiveButton(android.R.string.yes,
+						new DialogInterface.OnClickListener() {
+							@Override
+							public void onClick(DialogInterface dialog, int which) {
+								Home.deleteWhereGroup(caption);
+								toaster("delete successful");
+								fillListApprop(mode);
+							}
+						});
+				builder.setNegativeButton(android.R.string.no,
+						new DialogInterface.OnClickListener() {
+							@Override
+							public void onClick(DialogInterface dialog, int which) {
+								dialog.dismiss();
+							}
+						});
+				return builder.create();
+			default:
+				toaster("something went wrong with deleting");
+				return null;
+			}
+		default:
+			toaster("something went wrong with deleting");
+			return null;
+		}
 	}
 
 	public void list_btnAdd_onClick(View v) {
@@ -101,7 +156,7 @@ public class List extends ListActivity {
 			default:
 				toaster("commit failed");
 			}
-		}else{
+		} else {
 			toaster("please provide new name");
 		}
 	}

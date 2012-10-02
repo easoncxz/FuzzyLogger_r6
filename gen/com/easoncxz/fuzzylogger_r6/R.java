@@ -60,6 +60,8 @@ public final class R {
         public static final int home_btnView=0x7f040005;
         public static final int home_tvClue=0x7f040006;
         public static final int home_tvEmpty=0x7f040007;
+        public static final int list_alert_Delete_message_col=0x7f040020;
+        public static final int list_alert_Delete_message_row=0x7f04001f;
         public static final int list_btnAdd=0x7f040013;
         public static final int list_defaultText=0x7f040014;
         public static final int list_etHint_col=0x7f040018;
@@ -73,11 +75,11 @@ public final class R {
         public static final int list_tvPrompt_col=0x7f040016;
         public static final int list_tvPrompt_row=0x7f040015;
         public static final int menu_settings=0x7f040001;
-        public static final int one_defaultText=0x7f04001f;
-        public static final int one_etHint_col=0x7f040023;
-        public static final int one_etHint_row=0x7f040022;
-        public static final int one_tvPrompt_col=0x7f040021;
-        public static final int one_tvPrompt_row=0x7f040020;
+        public static final int one_defaultText=0x7f040021;
+        public static final int one_etHint_col=0x7f040025;
+        public static final int one_etHint_row=0x7f040024;
+        public static final int one_tvPrompt_col=0x7f040023;
+        public static final int one_tvPrompt_row=0x7f040022;
         public static final int record_btnCancel=0x7f04000e;
         public static final int record_btnCommit=0x7f04000d;
         public static final int record_btnEditX=0x7f04000a;

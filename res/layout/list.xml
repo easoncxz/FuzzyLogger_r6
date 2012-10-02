@@ -17,12 +17,13 @@
             android:id="@+id/list_et"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_weight="8"
             android:hint="@string/list_defaultText"/>
         <Button 
             android:id="@+id/list_btnAdd"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="2"
             android:text="@string/list_btnAdd"
             android:onClick="list_btnAdd_onClick"
             />

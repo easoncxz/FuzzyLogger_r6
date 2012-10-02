@@ -35,6 +35,8 @@
     <string name="list_strAppTitle_col">Columns List</string>
     <string name="list_menu_Delete">Delete</string>
     <string name="list_menu_Rename">Rename</string>
+    <string name="list_alert_Delete_message_row">Warning: All Entries accociated with this Row are about to be permanently deleted. This action cannot be undone! Are you sure you want to continue? </string>
+    <string name="list_alert_Delete_message_col">Warning: All Entries accociated with this Column are about to be permanently deleted. This action cannot be undone! Are you sure you want to continue? </string>
     
     <string name="one_defaultText">(default text)</string>
     <string name="one_tvPrompt_row">Renaming the Row:</string>

@@ -86,6 +86,7 @@ public class Home extends ListActivity {
 	}
 
 	static Cursor getGroupsList_alpha() {
+		// TODO in alpha
 		return db.rawQuery("SELECT * FROM (SELECT " + DBH.KEY_ID + ","
 				+ DBH.KEY_ROW + " AS " + DBH.KEY_GEN_GROUP + " FROM "
 				+ DBH.TABLE_ONLY_ONE + " WHERE " + DBH.KEY_ENTRY
@@ -108,6 +109,8 @@ public class Home extends ListActivity {
 				+ DBH.TABLE_ONLY_ONE + " WHERE " + DBH.KEY_ENTRY
 				+ " NOT NULL ORDER BY " + DBH.KEY_ID + " , " + DBH.KEY_ROW
 				+ " , " + DBH.KEY_COL + " , " + DBH.KEY_ENTRY, null);
+		// weirdly as in:
+		// new String[] { DBH.KEY_ENTRY, DBH.KEY_ROW + "+" + DBH.KEY_COL }
 		// TODO to test
 	}
 
@@ -119,6 +122,8 @@ public class Home extends ListActivity {
 				+ groupName + "' OR " + DBH.KEY_COL + "='" + groupName
 				+ "') AND " + DBH.KEY_ENTRY + " NOT NULL ORDER BY "
 				+ DBH.KEY_ROW + "+" + DBH.KEY_COL, null);
+		// weirdly as in:
+		// new String[] { DBH.KEY_ENTRY, DBH.KEY_ROW + "+" + DBH.KEY_COL }
 		// TODO to test
 	}
 
